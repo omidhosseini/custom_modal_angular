@@ -1,0 +1,20 @@
+*{
+  margin:0;
+  padding:0;
+}
+.o-modal{ 
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.60);
+}
+
+.o-modal-content{
+  padding: 10px;  
+  display: block; 
+  margin: 30px auto;
+  border: 1px solid red;
+  width: 420px;
+}
