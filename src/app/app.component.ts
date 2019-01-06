@@ -1,24 +1,18 @@
-import { Component } from '@angular/core';
-import { MassageService } from './services/massage.service';
+import { Component } from "@angular/core";
+import { MassageService } from "./services/massage.service";
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "my-app",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  appComponentMessage = 'Message From App Component'
-  name = 'Angular';
-  closed = true;
+  name = "Angular";
 
-  constructor(private messageSrv: MassageService) { 
-  }
+  constructor(private messageSrv: MassageService) {}
 
-  closedAction(e) {
-    console.log(e);
-  }
-  openModal(e) {
+  openModal() {
     // send message to subscribers via observable subject
-    this.messageSrv.openMessageModal('Message from app Component to message Component!');
+    this.messageSrv.openMessageModal("This message is from app.component!");
   }
 }

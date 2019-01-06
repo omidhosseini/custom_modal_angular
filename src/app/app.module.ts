@@ -1,16 +1,17 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { MessageComponent } from './components/message/message.component';
-import { MassageService } from './services/massage.service'; 
+import { AppComponent } from "./app.component";
+import { HelloComponent } from "./hello.component";
+import { MessageComponent } from "./components/message/message.component";
+import { MessageService } from "./services/message.service";
+import { UserComponent } from "./components/user/user.component";
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, MessageComponent,   ],
-  bootstrap:    [ AppComponent ],
-  providers: [MassageService]
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, HelloComponent, MessageComponent, UserComponent],
+  bootstrap: [AppComponent],
+  providers: [MessageService]
 })
-export class AppModule { }
+export class AppModule {}
