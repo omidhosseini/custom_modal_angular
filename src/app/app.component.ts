@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { MassageService } from "./services/massage.service";
+import { MessageService } from "./services/message.service";
 
 @Component({
   selector: "my-app",
@@ -9,7 +9,7 @@ import { MassageService } from "./services/massage.service";
 export class AppComponent {
   name = "Angular";
 
-  constructor(private messageSrv: MassageService) {}
+  constructor(private messageSrv: MessageService) {}
 
   openModal() {
     // send message to subscribers via observable subject
