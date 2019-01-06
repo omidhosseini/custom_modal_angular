@@ -8,11 +8,4 @@ import { MessageService } from "./services/message.service";
 })
 export class AppComponent {
   name = "Angular";
-
-  constructor(private messageSrv: MessageService) {}
-
-  openModal() {
-    // send message to subscribers via observable subject
-    this.messageSrv.openMessageModal("This message is from app.component!");
-  }
 }

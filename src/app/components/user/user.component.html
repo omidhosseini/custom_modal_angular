@@ -1,3 +1,7 @@
-<p>
-  user works!
-</p>
+<p>user Component</p>
+<input type="text" name="txtCustomMessage" id="customMessage" #customMessage />
+<input
+  type="button"
+  value="OpenModal2"
+  (click)="openModal(customMessage.value)"
+/>

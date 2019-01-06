@@ -10,4 +10,8 @@ export class UserComponent implements OnInit {
   constructor(private msgService: MessageService) {}
 
   ngOnInit() {}
+
+  openModal(customMessage: string) {
+    this.msgService.openMessageModal(customMessage);
+  }
 }

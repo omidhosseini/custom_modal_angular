@@ -1,8 +1,14 @@
-<div class="o-modal" *ngIf="isShow">
-	<div class="o-modal-content">
-		{{message?.text}}
+<div class="o-modal" *ngIf="isShow" dir="ltr">
+  <div class="o-modal-content">
+    <div class="o-modal-header">
+      <span class="mall" (click)="close()">&nbsp;</span>
+      <span class="title"> TITLE</span>
+      <div class="clear"></div>
+    </div>
+    <span> {{ message?.text }} </span>
 
-		<input type="button" value="Close" (click)="close()"/>
-
-</div>
+    <div class="o-modal-footer">
+      <input type="button" value="بستن" (click)="close()" />
+    </div>
+  </div>
 </div>
